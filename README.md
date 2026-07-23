@@ -94,7 +94,7 @@ The Random Forest model highlights which features contribute most significantly 
 
 You can also view the generated visualization chart directly from the repository:
 
-![Feature Importance Plot](reports/figures/feature_importance.png)
+
 
 ## Tech stack
 
