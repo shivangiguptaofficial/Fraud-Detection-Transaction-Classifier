@@ -95,3 +95,29 @@ The Random Forest model highlights which features contribute most significantly 
 You can also view the generated visualization chart directly from the repository:
 
 ![Feature Importance Plot](reports/figures/feature_importance.png)
+
+## Tech stack
+
+Python, pandas, scikit-learn, matplotlib, seaborn, Jupyter Notebook
+
+## Future improvements
+
+- Compare against gradient boosting (XGBoost/LightGBM) for a performance benchmark
+- Add SHAP-based explainability for individual predictions
+- Threshold tuning to explore the precision/recall trade-off explicitly
+- Cross-validation instead of a single train/test split for more robust metrics
+
+## Disclosure
+
+This project was developed with AI assistance (Anthropic's Claude) for
+code structuring, documentation, and analysis workflow — used as a
+development tool in the same way one might use an IDE's autocomplete or
+pair-programming assistant. All data exploration, the leakage discovery,
+model choices, and results in this repository were reviewed and verified
+by me.
+
+## License
+
+This project is licensed under the MIT License — see [LICENSE](LICENSE)
+for details. The dataset itself is CC0: Public Domain, courtesy of
+Samay Ashar on Kaggle.
