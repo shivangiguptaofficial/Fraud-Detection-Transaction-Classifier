@@ -108,3 +108,20 @@ behavioral fraud indicator, followed by transaction amount and account
 balance.
 
 ## Project structure
+fraud-detection-transaction-classifier/
+├── data/
+│   └── synthetic_fraud_dataset.csv
+├── notebooks/
+│   └── 01_eda.ipynb              # Exploratory analysis + leakage investigation
+├── src/
+│   ├── preprocessing.py          # Feature engineering & encoding pipeline
+│   └── train_model.py            # Training, evaluation, and plot generation
+├── models/
+│   └── random_forest_fraud_model.joblib
+├── reports/
+│   ├── metrics.json
+│   ├── feature_importance.csv
+│   └── figures/
+├── requirements.txt
+├── LICENSE
+└── README.md
