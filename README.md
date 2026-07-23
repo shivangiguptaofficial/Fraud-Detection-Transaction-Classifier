@@ -67,13 +67,31 @@ During EDA, the `Risk_Score` column showed an unusually strong correlation with 
   - **LICENSE**: Open-source license
   - **README.md**: Project documentation
 
-## Setup and Usage
+### Feature Importance Analysis
 
-Clone the repository and run the following commands in your terminal:
+The Random Forest model highlights which features contribute most significantly to detecting fraudulent transactions. Below is the complete feature importance ranking based on the trained model:
 
-```bash
-git clone [https://github.com/shivangiguptaofficial/Fraud-Detection-Transaction-Classifier.git](https://github.com/shivangiguptaofficial/Fraud-Detection-Transaction-Classifier.git)
-cd Fraud-Detection-Transaction-Classifier
-pip install -r requirements.txt
-python src/train_model.py
-jupyter notebook notebooks/01_eda.ipynb
+| Feature | Importance Score |
+| :--- | :--- |
+| Failed Transactions | 0.862524 |
+| Transaction Amount | 0.018370 |
+| Avg Transaction Amount | 0.017438 |
+| Account Balance | 0.017273 |
+| Transaction Count | 0.016956 |
+| Card Age | 0.014994 |
+| Transaction Frequency | 0.009702 |
+| Daily Transaction Limit | 0.008265 |
+| Transaction Type | 0.006143 |
+| Location | 0.004944 |
+| Merchant Category | 0.004817 |
+| Authentication Method | 0.004050 |
+| Card Type | 0.004039 |
+| Transaction Status | 0.003965 |
+| Device Type | 0.003210 |
+| Is Weekend | 0.001718 |
+| Previous Frauds | 0.000940 |
+| IP Address | 0.000653 |
+
+You can also view the generated visualization chart directly from the repository:
+
+![Feature Importance Plot](reports/figures/feature_importance.png)
