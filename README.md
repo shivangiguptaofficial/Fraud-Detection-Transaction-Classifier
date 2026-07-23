@@ -124,4 +124,13 @@ fraud-detection-transaction-classifier/
 │   └── figures/
 ├── requirements.txt
 ├── LICENSE
-└── README.md
+└── 
+git clone https://github.com/<your-username>/fraud-detection-transaction-classifier.git
+cd fraud-detection-transaction-classifier
+pip install -r requirements.txt
+
+# Run the training pipeline
+python src/train_model.py
+
+# Or explore the analysis interactively
+jupyter notebook notebooks/01_eda.ipynb
